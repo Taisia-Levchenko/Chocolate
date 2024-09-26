@@ -1,1 +1,26 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+.container{
+    min-width: 320px;
+    width: 100%;
+    max-width: 767px;
+    padding: 0 15px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
