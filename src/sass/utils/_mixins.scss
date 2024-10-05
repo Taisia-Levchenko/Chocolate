@@ -1,0 +1,33 @@
+@mixin btn($bg-color: #FD9222, $cl: #fff, $br:100px, $pad:14px 40px) {
+    background-color: $bg-color;
+    color: $cl;
+    border-radius: $br;
+    padding: $pad;
+  }
+  
+  @mixin text(
+    $font-s: 14px,
+    $font-w: 400,
+    $line-h: 1.29,
+    $letter-s: -0.02em,
+    $text-align: left
+  ) {
+    font-size: $font-s;
+    font-weight: $font-w;
+    line-height: $line-h;
+    letter-spacing: $letter-s;
+    text-align: $text-align;
+  }
+  
+  @mixin flex(
+    $direction: row,
+    $wrap: wrap,
+    $align: flex-start,
+    $justify: flex-start
+  ) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    align-items: $align;
+    justify-content: $justify;
+  }
