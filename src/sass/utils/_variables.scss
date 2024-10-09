@@ -1,8 +1,10 @@
 $colors:(
   'black-color': #111,
   'white-color': #fff,
-  'violer-color': #1e1823,
+  'violet-color': #1e1823,
   'orange-color': #fd9222,
+  'background-color': #fafafa,
+  'placeholder-color': #404040,
 );
 
 @function getColors($key) {
