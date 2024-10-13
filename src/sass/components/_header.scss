@@ -1,4 +1,6 @@
 .header {
+  padding-top: 18px;
+  padding-bottom: 18px;
   .container {
     display: flex;
     justify-content: space-between;
@@ -39,6 +41,9 @@
   &-socials {
     display: flex;
     gap: 20px;
+    &__svg {
+      stroke-width: 2px;
+    }
   }
   &-bg-menu {
     display: none;
