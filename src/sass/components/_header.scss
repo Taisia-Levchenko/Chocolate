@@ -1,0 +1,51 @@
+.header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    @include text(14px, 700, 129%, -0.03em, left);
+    color: getColors('black-color');
+    @media screen and (min-width: 1200px) {
+      @include text(18px, 700, 111%, -0.03em, left);
+    }
+    &__span {
+      font-style: italic;
+    }
+    &__svg {
+      fill: getColors('orange-color');
+    }
+  }
+  .navigation {
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 138px;
+      align-items: center;
+    }
+  }
+  .nav-header {
+    .nav-list {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      &__link {
+        @include text(14px, 500, 114%, -0.02em, left);
+        color: getColors('black-color');
+      }
+    }
+  }
+  &-socials {
+    display: flex;
+    gap: 20px;
+  }
+  &-bg-menu {
+    display: none;
+    @media screen and (max-width: 1199px) {
+      display: block;
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
