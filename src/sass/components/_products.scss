@@ -8,10 +8,7 @@
   background-color: getColors('background-color');
   padding: 72px 0;
   &__title {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.17;
-    text-align: center;
+    @include text(20px, 600, 1.17, -0.03em, center);
     color: getColors('black-color');
     margin-bottom: 32px;
     @media screen and (min-width: 768px) {
@@ -42,24 +39,19 @@
       margin-bottom: 8px;
     }
     &__name {
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 1.33;
+      @include text(18px, 600, 1.33, -0.02em, center);
       color: getColors('black-color');
       margin-bottom: 2px;
     }
     &__species {
-      font-size: 12px;
-      line-height: 1.17;
-      letter-spacing: -0.02em;
+      @include text(12px, 400, 1.17, -0.02em, center);
       color: rgba(17, 17, 17, 0.7);
       margin-bottom: 18px;
     }
-    &__button {
+    .products-list__button {
       background-color: getColors('background-color');
       color: getColors('black-color');
-      font-size: 14px;
-      font-weight: 600;
+      @include text(14px, 600, 1.17, -0.02em, center);
       border: none;
       border-radius: 15px;
       padding: 8px 20px;
