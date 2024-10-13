@@ -1,7 +1,7 @@
 .subscribe{
    background-repeat: no-repeat;
    background-position: center;
-   background-image: url("../images/img/subscribe-bkg-phone.jpg");
+   background-image: url("../images/img/subscribe-bkg-desktop.jpg");
    background-position: center;
    background-size: cover;
    width: 100%;
@@ -40,7 +40,9 @@ padding: 62px 0px;
       (-o-min-device-pixel-ratio: 192/1),
       (min-resolution: 192dppx) {
             background-image: url("../images/subscribe-bkg-desktop@2x.jpg");
-        }
+      }
+   }
+        
 
 &__title{
    color: getColors('white-color');
@@ -58,7 +60,7 @@ max-width: 291px;
 }
 }
 
-} 
+ 
 &__text{
 color: rgb(255, 255, 255);
 font-family:'Montserrat', sans-serif;
@@ -72,7 +74,9 @@ max-width: 326px;
 @media (min-width:768px) {
    max-width: 467px;
 }
+
 }
+
 &__btn{
   display: block;
 background-color: rgb(253, 146, 34); 
