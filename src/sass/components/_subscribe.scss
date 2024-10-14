@@ -1,0 +1,103 @@
+.subscribe{
+   background-repeat: no-repeat;
+   background-position: center;
+   background-image: url("../images/img/subscribe-bkg-desktop.jpg");
+   background-position: center;
+   background-size: cover;
+   width: 100%;
+padding: 62px 0px;
+@media (-webkit-min-device-pixel-ratio: 0.020833333333333332),
+(-o-min-device-pixel-ratio: 1/48),
+(min-resolution: 2dpi),
+(-webkit-min-device-pixel-ratio: 192),
+(-o-min-device-pixel-ratio: 192/1),
+(min-resolution: 192dppx) {
+        background-image: url("../images/img/subscribe-bkg-phone@2x.jpg");
+    }
+
+    @media (min-width: 768px) {
+        background-image: url("../images/img/subscribe-bkg-tablet.jpg");
+
+        @media (-webkit-min-device-pixel-ratio: 0.020833333333333332),
+        (-o-min-device-pixel-ratio: 1/48),
+        (min-resolution: 2dpi),
+        (-webkit-min-device-pixel-ratio: 192),
+        (-o-min-device-pixel-ratio: 192/1),
+        (min-resolution: 192dppx) {
+            background-image: url("../images/img/subscribe-bkg-tablet@2x.jpg");
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding: 72px 0;
+        background-image: url("../images/img/subscribe-bkg-desktop.jpg");
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 0.020833333333333332),
+      (-o-min-device-pixel-ratio: 1/48),
+      (min-resolution: 2dpi),
+      (-webkit-min-device-pixel-ratio: 192),
+      (-o-min-device-pixel-ratio: 192/1),
+      (min-resolution: 192dppx) {
+            background-image: url("../images/subscribe-bkg-desktop@2x.jpg");
+      }
+   }
+        
+
+&__title{
+   color: getColors('white-color');
+   @include text(20px, 600, 1.2, -0.03em, left);
+font-family: 'Montserrat', sans-serif;
+text-transform: uppercase;
+text-align: center;
+margin: 0 auto 24px;
+max-width: 291px;
+@media (min-width:768px) {
+   max-width: 376px;
+   font-size: 24px;
+   line-height: 1.16;
+   margin: 0 auto 24px;
+}
+}
+
+ 
+&__text{
+color: rgb(255, 255, 255);
+font-family:'Montserrat', sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.28;
+letter-spacing: -0.02em;
+text-align: center;
+margin: 0 auto 24px;
+max-width: 326px;
+@media (min-width:768px) {
+   max-width: 467px;
+}
+
+}
+
+&__btn{
+  display: block;
+background-color: rgb(253, 146, 34); 
+    color: white;
+    padding: 12px 28px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0;
+    transition: background-color 0.3s ease;
+    border: none;
+   margin: 0 auto;
+   cursor: pointer;
+    &:hover{
+      background-color: rgb(252, 241, 224);
+      color: orange;
+    }
+@media (min-width:768px) {
+   font-size: 18px;
+   line-height: 1.22;
+}
+}
+}
