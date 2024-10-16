@@ -7,6 +7,7 @@
   .reviews{
             padding: 72px 0;
             text-align: center;
+            background-color: getColors('background-color');
             @media (min-width: 768px) {
                 padding: 100px 0;
             }
