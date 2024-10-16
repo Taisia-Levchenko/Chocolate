@@ -1,31 +1,42 @@
 <section class="top" id="top">
     <div class="container">
         <h2 class="top__title"><span class="top__title top__title--orange">TOP</span>SELLERS</h2>
-        <ul class="top-list">
-            <li class="top-list__item" >
+        <div class="top-thumb">
                 <picture>
-                    <img src="./images/img/top1-desktop.jpg" alt="#" class="top-list__img"
-                    srcset="./images/img/top1-desktop.jpg 1x, ./images/img/top1-desktop@2x.jpg 2x">
+            
+                        <source srcset="./images/img/top1-desktop.jpg 1x, ./images/img/top1-desktop@2x.jpg 2x"
+                        media="(min-width:1200px)">
+                        <source srcset="./images/img/top1-tablet.jpg 1x, ./images/img/top1-tablet@2x.jpg 2x"
+                        media="(min-width:768px)">
+                        <source srcset="./images/img/top1-phone.jpg 1x, ./images/img/top1-phone@2x.jpg 2x"
+                        media="(max-width:767px)">
+                        <img src="./images/img/top1-desktop.jpg" alt="#" class="top-thumb__img">
+                     
+                        <p class="top-thumb__text">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
                 </picture>
-            </li>
-            <li class="top-list__item">
+           
                 <picture>
-                    <img src="./images/img/top2-desktop.jpg" alt="#" class="top-list__img"
-                    srcset="./images/img/top2-desktop.jpg 1x, ./images/img/top2-desktop@2x.jpg 2x">
+                    <source srcset="./images/img/top2-desktop.jpg 1x, ./images/img/top2-desktop@2x.jpg 2x"
+                    media="(min-width:1200px)">
+                    <source srcset="./images/img/top2-tablet.jpg 1x, ./images/top2-tablet@2x.jpg 2x"
+                    media="(min-width:768px)">
+                    <source srcset="./images/img/top2-phone.jpg 1x, ./images/img/top2-phone@2x.jpg 2x"
+                    media="(max-width:767px)">
+                    <img src="./images/img/top2-desktop.jpg" alt="#" class="top-thumb__img">
                 </picture>
                 
-            </li>
-
-            <li class="top-list__item">
+            
                 <picture>
-                    <img src="./images/img/top3-desktop.jpg" alt="#" class="top-list__img"
-                    srcset="./images/img/top3-desktop.jpg 1x, ./images/img/top3-desktop@2x.jpg 2x">
+                    <source srcset="./images/img/top3-desktop.jpg 1x, ./images/img/top3-desktop@2x.jpg 2x"
+                        media="(min-width:1200px)">
+
+                    <img src="./images/img/top3-desktop.jpg" alt="#" class="top-thumb__img3">
                 </picture>
-            </li>
+           
         
-        <p class="top-list__text">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
-        <button type="button" class="top-list__btn">Buy now</button>
-    </ul>
-        
+        <p class="top-thumb__text">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+        <button type="button" class="top-thumb__btn">Buy now</button>
+   
+    </div>
     </div>
 </section>
