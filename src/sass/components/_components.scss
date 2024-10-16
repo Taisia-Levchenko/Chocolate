@@ -1,0 +1,131 @@
+.components {
+  background-color: getColors('background-color');
+  padding: 128px 0;
+  &__title {
+    @include text(20px, 600, 1.17, -0.03em, center);
+    max-width: 411px;
+    margin: 0 auto;
+    color: getColors('black-color');
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
+     &--orange {
+    color: getColors('orange-color');
+  }
+  }
+  &__text {
+    @include text(14px, 400, 1.29, -0.02em, center);
+    max-width: 486px;
+    margin: 30px auto;
+    color: getColors('black-color');
+  }
+}
+.components-list {
+  @include flex(row, wrap, center, center);
+  gap: 20px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+  &__item {
+    width: 336px;
+    height: 270px;
+    border-radius: 15px;
+    border: 1px solid getColors('orange-color');
+    color: getColors('white-color');
+    padding: 28px 36px 28px 28px;
+    @media screen and (min-width: 768px) {
+      width: 270px;
+    }
+  }
+  &__item:nth-child(1) {
+    background-color: getColors('orange-color');
+  }
+  &__item:nth-child(2) {
+    background-color: getColors('white-color');
+    color: getColors('black-color');
+  }
+  &__item:nth-child(3) {
+    background-color: getColors('violet-color');
+    border: 1px solid getColors('black-color');
+  }
+  &__item:nth-child(4) {
+    background-color: getColors('white-color');
+    color: getColors('black-color');
+  }
+  &__item:hover {
+    border: none;
+    padding: 0;
+  }
+  &__text {
+    margin-top: 36px;
+    @include text(14px, 600, 1.29, -0.02em, left);
+  }
+  &__img {
+    margin: 0 20px 0 28px;
+    width: 224px;
+    height: 171px;
+    @media screen and (min-width: 768px) {
+      margin: 0;
+      width: 206px;
+      height: 160px;
+    }
+  }
+}
+.components-thumb {
+  position: relative;
+  overflow: hidden;
+  width: 336px;
+  height: 270px;
+  @media screen and (min-width: 768px) {
+    width: 270px;
+  }
+}
+.components-list__item:hover .components-overlay {
+  pointer-events: auto;
+  opacity: 1;
+}
+.components-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+  background-color: getColors('white-color');
+  border: 1px solid getColors('white-color');
+  color: getColors('black-color');
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  &__title {
+    @include text(18px, 600, 1.22, -0.03em, left);
+  }
+  &__text {
+    @include text(14px, 400, 18px, -2%, left);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 279px;
+    height: 146px;
+    @media screen and (min-width: 768px) {
+      width: 214px;
+    }
+  }
+  &__text::-webkit-scrollbar {
+    display: none;
+  }
+  &__button--substance,
+  &__button--benefits {
+    @include text(10px, 400, 12px, -0.03em, left);
+    background-color: getColors('orange-color');
+    border: 1px solid getColors('orange-color');
+    border-radius: 35px;
+    padding: 6px 16px;
+    margin: 8px 0 20px;
+    max-width: 214px;
+    cursor: pointer;
+  }
+  &__button--benefits {
+    background-color: getColors('white-color');
+  }
+}
