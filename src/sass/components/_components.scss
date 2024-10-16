@@ -9,9 +9,9 @@
     @media screen and (min-width: 768px) {
       font-size: 24px;
     }
-     &--orange {
-    color: getColors('orange-color');
-  }
+    &--orange {
+      color: getColors('orange-color');
+    }
   }
   &__text {
     @include text(14px, 400, 1.29, -0.02em, center);
@@ -33,6 +33,7 @@
     border: 1px solid getColors('orange-color');
     color: getColors('white-color');
     padding: 28px 36px 28px 28px;
+    position: relative;
     @media screen and (min-width: 768px) {
       width: 270px;
     }
@@ -71,21 +72,13 @@
     }
   }
 }
-.components-thumb {
-  position: relative;
-  overflow: hidden;
-  width: 336px;
-  height: 270px;
-  @media screen and (min-width: 768px) {
-    width: 270px;
-  }
-}
 .components-list__item:hover .components-overlay {
   pointer-events: auto;
   opacity: 1;
 }
 .components-overlay {
   position: absolute;
+  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -96,7 +89,7 @@
   color: getColors('black-color');
   border-radius: 15px;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 250ms ease;
   pointer-events: none;
   &__title {
     @include text(18px, 600, 1.22, -0.03em, left);
