@@ -7,6 +7,7 @@
   .reviews{
             padding: 72px 0;
             text-align: center;
+            background-color: getColors('background-color');
             @media (min-width: 768px) {
                 padding: 100px 0;
             }
@@ -55,7 +56,7 @@
     font-size: 18px;
     line-height: 1.33;
     text-align: center;
-    margin: 18px 0 24px;
+    margin: 56px 0 24px;
     }
     .reviews-list__text{
         font-weight: 400;
@@ -64,6 +65,15 @@
     letter-spacing: -0.02em;
     text-align: center;
     color: rgba(17, 17, 17, 0.7);
+    padding: 18px 42px;
+    @media (min-width: 768px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    @media (min-width: 1200px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
     }
     .reviews__btn{
         border: 1px solid orange;
