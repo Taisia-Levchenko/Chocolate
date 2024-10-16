@@ -1,0 +1,83 @@
+.mobile-menu {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+  display: block;
+  width: 220px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  z-index: 10;
+  background-color: getColors('violet-color');
+  @media screen and (min-width: 768px) {
+    width: 290px;
+  }
+}
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.menu-open,
+.menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+  &__icon {
+    fill: getColors('black-color');
+    width: 24px;
+    height: 16px;
+  }
+}
+.menu-close {
+  border-radius: 50%;
+  position: absolute;
+  top: 20;
+  right: 20;
+  @media screen and (min-width: 768px) {
+    top: 24;
+    right: 32;
+  }
+  &__icon {
+    fill: getColors('white-color');
+    width: 14px;
+    height: 14px;
+  }
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 137px;
+  &-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 23px;
+    padding-left: 30px;
+    @media screen and (min-width: 768px) {
+      padding-left: 65px;
+    }
+    &__link {
+      color: getColors("white-color");
+    }
+  }
+  &-socials {
+    display: flex;
+    flex-direction: row;
+    margin-top: 340px;
+    &__svg {
+      fill: getColors("white-color");
+    }
+  }
+}
