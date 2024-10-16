@@ -118,6 +118,9 @@
     max-width: 214px;
     cursor: pointer;
   }
+  &__button--substance {
+   color: getColors('white-color');
+  }
   &__button--benefits {
     background-color: getColors('white-color');
   }
