@@ -54,11 +54,11 @@
     }
   }
   &-bg-menu {
-    display: none;
-    @media screen and (max-width: 1199px) {
-      display: block;
-      background-color: transparent;
-      border: none;
+    display: block;
+    background-color: transparent;
+    border: none;
+    @media screen and (min-width: 1200px) {
+      display: none;
     }
   }
 }

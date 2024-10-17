@@ -1,7 +1,9 @@
 @import './utils/variables';
 @import './utils/mixins';
+
 @import './base/common';
 @import './base/reset';
+
 @import './components/header';
 @import './components/hero';
 @import './components/advantages';
@@ -12,3 +14,10 @@
 @import './components/reviews';
 @import './components/subscribe';
 @import './components/footer';
+
+@import './components/modals/burger-menu';
+@import './components/modals/modal-buynow';
+@import './components/modals//modal-ty-buy';
+@import './components/modals/modal-reviews';
+@import './components/modals/modal-ty-feedback';
+@import './components/modals/modal-subscribe';
