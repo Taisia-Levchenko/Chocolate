@@ -1,0 +1,2 @@
+!function(){let e={openSubscrBtn:document.querySelectorAll("[data-open-subscribe]"),closeSubscrBtn:document.querySelector("[data-close-subscribe]"),backdropSubscr:document.querySelector(".backdrop-subscribe")};function c(){e.backdropSubscr.classList.toggle("is-hidden"),"hidden"===document.body.style.overflow?document.body.style.overflow="visible":document.body.style.overflow="hidden"}e.openSubscrBtn.forEach(e=>{e.addEventListener("click",c)}),e.closeSubscrBtn.addEventListener("click",c)}();
+//# sourceMappingURL=index.745ebb17.js.map
