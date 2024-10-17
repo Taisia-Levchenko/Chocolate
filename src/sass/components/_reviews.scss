@@ -4,3 +4,88 @@
       height: 297px;
     }
   }
+  .reviews{
+            padding: 72px 0;
+            text-align: center;
+            background-color: getColors('background-color');
+            @media (min-width: 768px) {
+                padding: 100px 0;
+            }
+            @media (min-width: 1200px) {
+                padding: 128px 0;
+            }
+        }
+    .reviews__title__chocolate{
+        font-weight: 600;
+    font-size: 20px;
+    line-height: 1.20;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: orange;
+    margin-bottom: 32px;
+        @media (min-width: 768px) {
+            font-size: 24px;
+            line-height: 1.17;
+            margin-bottom:50px;
+        }
+    }
+    .reviews__title__chocolate--isloved{
+        color: black;
+    }
+    .reviews-list__thumb{
+        border: 1px solid rgba(17, 17, 17, 0.1);
+        border-radius: 15px;
+        width: 335px;
+    height: 200px;
+        @media (min-width: 768px) {
+            width: 344px;
+        }
+        @media (min-width: 1200px) {
+            width: 360px;
+        }
+    }
+    .reviews-list{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 28px;
+    }
+    .reviews-list__title{
+        font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+    margin: 56px 0 24px;
+    }
+    .reviews-list__text{
+        font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+    padding: 18px 42px;
+    @media (min-width: 768px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    @media (min-width: 1200px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    }
+    .reviews__btn{
+        border: 1px solid orange;
+        border-radius: 100px;
+        padding: 12px 28px;
+        width: 165px;
+        height: 41px;
+        margin-top: 32px;
+        @media (min-width: 768px) {
+            padding: 14px 40px;
+            width: 222px;
+            height: 50px;
+            margin-top: 50px;
+        }
+    }

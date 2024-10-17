@@ -1,0 +1,58 @@
+.advantages {
+  background-color: getColors('violet-color');
+  padding: 20px 0 35px;
+  @media screen and (min-width: 768px) {
+    padding: 49px 0 83px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 50px 0 71px;
+  }
+}
+.advantages-list {
+  @include flex($direction: column, $align: center);
+  gap: 38px;
+  @media screen and (min-width: 768px) {
+    @include flex();
+  }
+  @media screen and (min-width: 1200px) {
+    @include flex($justify: center);
+    gap: 88px;
+  }
+  &__item {
+    width: 308px;
+    position: relative;
+  }
+  &__item--after::after {
+    @media screen and (min-width: 1200px) {
+      content: '';
+      display: block;
+      position: absolute;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      width: 1px;
+      height: 124px;
+      top: 60;
+      left: 327;
+    }
+  }
+  &__container {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 365px;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__svg {
+    fill: getColors('orange-color');
+  }
+  &__title {
+    @include text($font-s: 18px, $font-w: 600);
+    color: getColors('white-color');
+    margin: 21px 0 17px;
+  }
+  &__text {
+    color: rgba(255, 255, 255, 0.7);
+    @include text();
+  }
+}
