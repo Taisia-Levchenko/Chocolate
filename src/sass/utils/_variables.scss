@@ -1,10 +1,11 @@
-$colors:(
+$colors: (
   'black-color': #111,
   'white-color': #fff,
   'violet-color': #1e1823,
   'orange-color': #fd9222,
   'background-color': #fafafa,
   'placeholder-color': #404040,
+  'background-button': #fcf1e0,
 );
 
 @function getColors($key) {
@@ -12,8 +13,8 @@ $colors:(
 }
 
 $fonts: (
-  'font-roboto':#{"'Roboto', sans-serif"},
-  'font-montserrat':#{"'Montserrat', sans-serif"} ,
+  'font-roboto': #{"'Roboto', sans-serif"},
+  'font-montserrat': #{"'Montserrat', sans-serif"},
 );
 
 @function getFonts($key) {
