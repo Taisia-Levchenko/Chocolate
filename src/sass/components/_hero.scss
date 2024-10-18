@@ -63,15 +63,36 @@
       font-weight: 600;
       font-size: 14px;
       padding: 11px 27px;
+      cursor: pointer;
+      transition: color, background-color, border,
+        320ms cubic-bezier(0.4, 0, 0.2, 1);
       &--buy {
         @include btn($pad: 12px 28px);
         border: 1px solid #fff;
         border: none;
+        &:hover,
+        &:focus {
+          color: getColors('orange-color');
+          background-color: getColors('background-button');
+        }
       }
       &--made {
         @include btn($bg-color: transparent, $pad: 12px 28px);
         border: 1px solid #fff;
+        &:hover,
+        &:focus {
+          color: getColors('orange-color');
+          border: 1px solid getColors('orange-color');
+          background-color: getColors('white-color');
+        }
       }
+      // &:hover,
+      // &:focus {
+      //   // transition: transform 0.7s ease;
+
+      //   transition-duration: 380ms;
+      //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      // }
     }
   }
   &-scroll {
@@ -84,6 +105,10 @@
     align-items: center;
     gap: 14px;
     color: getColors('white-color');
+    transition: color, background-color, fill, 0.7s ease;
+    &:hover, &:focus {
+      color: getColors('orange-color');
+    }
     &__circle {
       border-radius: 50%;
       background-color: getColors('white-color');
@@ -92,9 +117,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: background-color 0.7s ease;
+      &:hover, &:focus {
+        background-color: getColors('orange-color'); 
+      }
     }
     &__svg {
+      transition: fill 0.7s ease;
       fill: getColors('orange-color');
+      &:hover, &:focus {
+        fill: getColors('white-color');
+      }
     }
   }
 }
