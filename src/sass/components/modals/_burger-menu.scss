@@ -1,7 +1,4 @@
 .mobile-menu {
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
   display: block;
   width: 220px;
   height: 100%;
@@ -11,6 +8,9 @@
   overflow: auto;
   z-index: 10;
   background-color: getColors('violet-color');
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
   @media screen and (min-width: 768px) {
     width: 290px;
   }
