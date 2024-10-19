@@ -19,6 +19,7 @@
     "url": "https://github.com/Taisia-Levchenko/Chocolate"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001669",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {

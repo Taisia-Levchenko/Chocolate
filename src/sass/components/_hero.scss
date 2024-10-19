@@ -96,19 +96,16 @@
     }
   }
   &-scroll {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: getColors('white-color');
     @media screen and (min-width: 768px) {
       position: absolute;
       bottom: 39;
       right: 39;
     }
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    color: getColors('white-color');
-    transition: color, background-color, fill, 0.7s ease;
-    &:hover, &:focus {
-      color: getColors('orange-color');
-    }
+
     &__circle {
       border-radius: 50%;
       background-color: getColors('white-color');
