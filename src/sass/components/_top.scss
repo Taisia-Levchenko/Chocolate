@@ -1,0 +1,118 @@
+.top {
+    &__title {
+        font-family: getFonts("font-montserrat");
+        @include text(20px, 600, 1.2, -0.03em, center);
+        margin-bottom: 32px;
+        text-transform: uppercase;
+        color: getColors("black-color");
+
+        @media (min-width:768px) {
+            line-height: 1.17;
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+
+        &--orange {
+            color: getColors("orange-color");
+        }
+
+    }
+
+    .top-list {
+        @include flex(column, wrap, center, flex-start);
+
+        gap: 32px;
+
+        @media (min-width:768px) {
+            flex-direction: row;
+            justify-content: center;
+            gap: 16px;
+            align-items: flex-start;
+
+        }
+    }
+
+    &__item {
+        @include flex(column, nowrap, flex-start, center);
+        gap: 20px;
+
+        @media (min-width:768px) {
+            gap: 32px;
+        }
+
+        &:nth-child(1) {
+            @media (min-width:1200px) {
+                flex: 1 1 32%;
+            }
+        }
+
+        &:nth-child(2) {
+            @media (min-width:1200px) {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 16px;
+                flex: 1 1 66%;
+            }
+        }
+    }
+
+    &__img {
+
+        border-radius: 15px;
+        width: 368px;
+        height: 464px;
+
+        @media (min-width:768px) {
+            width: 344px;
+        }
+
+        @media (min-width:1200px) {
+            width: 368px;
+        }
+
+        &--darkchoco {
+            display: none;
+
+            @media (min-width:1200px) {
+                display: block;
+            }
+
+
+        }
+    }
+
+
+
+
+    &__text {
+        @include text();
+        margin: 20px 5px 20px;
+        color: getColors("black-color");
+        width: 100%;
+        max-width: 306px;
+
+        @media (min-width:1200px) {
+            max-width: 368px;
+        }
+
+    }
+
+    &__btn {
+        padding: 12px 28px;
+        margin: 0 auto;
+        @include text(14px, 600, 1.21, 0, center);
+        border-radius: 100px;
+        color: getColors("white-color");
+        background-color: getColors("orange-color");
+        &:hover,&:focus {
+            color: getColors("orange-color");
+            background-color: getColors("white-color");
+        }
+        @media (min-width:768px) {
+            padding: 14px 40px;
+            margin: 0 0 0 auto;
+            font-size: 18px;
+        }
+    }
+}
