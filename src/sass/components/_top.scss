@@ -17,6 +17,7 @@
         }
 
     }
+}
 
     .top-list {
         @include flex(column, wrap, center, flex-start);
@@ -30,7 +31,8 @@
             align-items: flex-start;
 
         }
-    }
+    
+
 
     &__item {
         @include flex(column, nowrap, flex-start, center);
@@ -45,6 +47,7 @@
                 flex: 1 1 32%;
             }
         }
+    
 
         &:nth-child(2) {
             @media (min-width:1200px) {
@@ -99,6 +102,7 @@
     }
 
     &__btn {
+        border: none;
         padding: 12px 28px;
         margin: 0 auto;
         @include text(14px, 600, 1.21, 0, center);
