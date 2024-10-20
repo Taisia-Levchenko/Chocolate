@@ -12,13 +12,15 @@
         max-width: 1200px;
     }
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
     font-style: normal;
-    scroll-behavior: smooth;
 }
 img {
     display: block;

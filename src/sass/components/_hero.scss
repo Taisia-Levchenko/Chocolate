@@ -9,35 +9,29 @@
     border-radius: 20px;
     background-image: url('../images/img/header-bkg-phone.jpg');
     @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 0.020833333333333332),
-      (-o-min-device-pixel-ratio: 1/48),
-      (min-resolution: 2dpi),
-      (-webkit-min-device-pixel-ratio: 192),
-      (-o-min-device-pixel-ratio: 192/1),
-      (min-resolution: 192dppx) {
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url('../images/img/header-bkg-phone@2x.jpg');
     }
     @media screen and (min-width: 768px) {
       background-image: url('../images/img/header-bkg-tablet.jpg');
       @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 0.020833333333333332),
-        (-o-min-device-pixel-ratio: 1/48),
-        (min-resolution: 2dpi),
-        (-webkit-min-device-pixel-ratio: 192),
-        (-o-min-device-pixel-ratio: 192/1),
-        (min-resolution: 192dppx) {
+        (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url('../images/img/header-bkg-tablet@2x.jpg');
       }
     }
     @media screen and (min-width: 1200px) {
       background-image: url('../images/img/header-bkg-desktop.jpg');
       @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 0.020833333333333332),
-        (-o-min-device-pixel-ratio: 1/48),
-        (min-resolution: 2dpi),
-        (-webkit-min-device-pixel-ratio: 192),
-        (-o-min-device-pixel-ratio: 192/1),
-        (min-resolution: 192dppx) {
+        (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url('../images/img/header-bkg-desktop@2x.jpg');
       }
     }
@@ -115,14 +109,16 @@
       justify-content: center;
       align-items: center;
       transition: background-color 0.7s ease;
-      &:hover, &:focus {
-        background-color: getColors('orange-color'); 
+      &:hover,
+      &:focus {
+        background-color: getColors('orange-color');
       }
     }
     &__svg {
       transition: fill 0.7s ease;
       fill: getColors('orange-color');
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         fill: getColors('white-color');
       }
     }
