@@ -29,52 +29,67 @@
             line-height: 1.17;
             margin-bottom:50px;
         }
-    }
-    .reviews__title__chocolate--isloved{
-        color: black;
-    }
-    .reviews-list__thumb{
-        border: 1px solid rgba(17, 17, 17, 0.1);
-        border-radius: 15px;
-        width: 335px;
-    height: 200px;
-        @media (min-width: 768px) {
-            width: 344px;
-        }
-        @media (min-width: 1200px) {
-            width: 360px;
+        &--isloved{
+            color: black;
         }
     }
+
     .reviews-list{
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         gap: 28px;
+        &__thumb{
+            border: 1px solid rgba(17, 17, 17, 0.1);
+            border-radius: 15px;
+            width: 335px;
+        height: 200px;
+        position: relative;
+        z-index: 1;
+            @media (min-width: 768px) {
+                width: 344px;
+            }
+            @media (min-width: 1200px) {
+                width: 360px;
+            }
+        }
+        &__title{
+            font-weight: 600;
+        font-size: 18px;
+        line-height: 1.33;
+        text-align: center;
+        margin: 56px 0 24px;
+        }
+        &__text{
+            font-weight: 400;
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: rgba(17, 17, 17, 0.7);
+        padding: 18px 42px;
+        @media (min-width: 768px) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        @media (min-width: 1200px) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        }
+        &__image{
+            margin: 0 auto;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            z-index: 2;
+            top: -50px;
+            right: 150px;
+        }
     }
-    .reviews-list__title{
-        font-weight: 600;
-    font-size: 18px;
-    line-height: 1.33;
-    text-align: center;
-    margin: 56px 0 24px;
-    }
-    .reviews-list__text{
-        font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: rgba(17, 17, 17, 0.7);
-    padding: 18px 42px;
-    @media (min-width: 768px) {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    @media (min-width: 1200px) {
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-    }
+
+
+
     .reviews__btn{
         border: 1px solid orange;
         border-radius: 100px;
