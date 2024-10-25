@@ -1,0 +1,87 @@
+<div class="backdrop-buy is-hidden">
+  <div class="buy-now-modal">
+    <button type="button" class="buy-now-modal__close" data-close-buy>
+      <svg class="buy-now-modal__icon" width="12" height="12">
+        <use href="./images/icons/symboldefs.svg#close"></use>
+      </svg>
+    </button>
+    <h2 class="buy-now-modal__title"><span class="buy-now-modal__title buy-now-modal__title--orange">BUY </span>NOW</h2>
+    <ul class="buy-list">
+      <li class="buy-list__item">
+        <picture>
+          <source srcset="./images/img/buy-now-img1.jpeg 1x, ./images/img/buy-now-img1@2x.jpeg 2x"
+            media="(min-width:768px)">
+
+          <source srcset="./images/img/buy-now-img1-phone.jpeg 1x, ./images/img/buy-now-img1-phone@2x.jpeg 2x"
+            media="(max-width:767px)">
+          <img src="./images/img/buy-now-img1.jpeg" alt="#" class="buy-list__img">
+        </picture>
+        <p class="buy-list__text">100g</p>
+      </li>
+      <li class="buy-list__item">
+
+        <source srcset="./images/img/buy-now-img2.jpeg 1x, ./images/img/buy-now-img2@2x.jpeg 2x"
+          media="(min-width:768px)">
+        <source srcset="./images/img/buy-now-img2-phone.png 1x, ./images/img/buy-now-img2-phone@2x.png 2x"
+          media="(max-width:767px)">
+        <img src="./images/img/buy-now-img2.jpeg" alt="#" class="buy-list__img">
+        <p class="buy-list__text">200g</p>
+      </li>
+      <li class="buy-list__item">
+        <picture>
+
+          <source srcset="./images/img/buy-now-img3.jpeg 1x, ./images/img/buy-now-img3@2x.jpeg 2x"
+            media="(min-width:768px)">
+          <source srcset="./images/img/buy-now-img3-phone.jpeg 1x, ./images/img/buy-now-img3-phone@2x.jpeg 2x"
+            media="(max-width:767px)">
+          <img src="./images/img/buy-now-img3.jpeg" alt="#" class="buy-list__img">
+        </picture>
+        <p class="buy-list__text">300g</p>
+      </li>
+    </ul>
+
+    <form class="buy-now-form">
+      <ul class="buy-form-list">
+        <li class="buy-form-list__item">
+          <h2 class="buy-form-list__name">Personal information </h2>
+          <div class="buy-form-list__personal-info">
+            <input class="buy-form-list__input" type="text" placeholder="Name" name="user_name" required
+              pattern="^[a-zA-Z]+$" minlength="2" />
+            <input class="buy-form-list__input" type="text" placeholder="Surname" name="user_surname" id="user_surname"
+              required pattern="^[a-zA-Z]+$" minlength="2" />
+          </div>
+        </li>
+        <li class="buy-form-list__item">
+          <h2 class="buy-form-list__name">Email </h2>
+          <input class="buy-form-list__input" type="email" placeholder="Enter your email" name="user_email" required />
+        </li>
+        <li class="buy-form-list__item buy-form-list__item--tel ">
+          <h2 class="buy-form-list__name">Phone number </h2>
+          <div class="phone-container">
+            <svg class="phone-container__svg"></svg>
+            <p class="phone-container__number"></p>
+          </div>
+
+          <input type="number" name="pnone-number" class="buy-form-list__input buy-form-list__input--tel"
+            placeholder="Phone number" />
+        </li>
+
+        <li class="buy-form-list__item buy-form-list__item--card">
+          <h2 class="buy-form-list__name">Card number
+          </h2>
+          <div class="card-container">
+            <svg class="card-container__svg"></svg>
+          </div>
+          <input class="buy-form-list__input" type="text" placeholder="Enter card" name="user_card" required
+            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" title="xxxx-xxxx-xxxx-xxxx" />
+  </div>
+  </li>
+  <li class="buy-form-list__item">
+    <h2 class="buy-form-list__name">Comment </h2>
+    <textarea class="buy-form-list__textarea" name="user_message" rows="5" placeholder="Enter Text"></textarea>
+  </li>
+  </ul>
+  <button class="buy-now-form__btn" type="button" data-open-thanks>Submit</button>
+  </form>
+</div>
+</div>
