@@ -58,8 +58,7 @@
       font-size: 14px;
       padding: 11px 27px;
       cursor: pointer;
-      transition: color, background-color, border,
-        320ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: background-color, border, 320ms cubic-bezier(0.4, 0, 0.2, 1);
       &--buy {
         @include btn($pad: 12px 28px);
         border: 1px solid #fff;
@@ -78,22 +77,33 @@
           color: getColors('orange-color');
           border: 1px solid getColors('orange-color');
           background-color: getColors('white-color');
+          .hero-buttons__link {
+            color: getColors('orange-color');
+          }
         }
       }
-      // &:hover,
-      // &:focus {
-      //   // transition: transform 0.7s ease;
-
-      //   transition-duration: 380ms;
-      //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      // }
+    }
+    &__link {
+      transition: color 320ms cubic-bezier(0.4, 0, 0.2, 1);
+      color: getColors('white-color');
     }
   }
   &-scroll {
     display: flex;
     align-items: center;
     gap: 14px;
+    transition: color 0.7s ease;
     color: getColors('white-color');
+    &:hover,
+    &:focus {
+      color: getColors('orange-color');
+      .hero-scroll__circle {
+        background-color: getColors('orange-color');
+      }
+      .hero-scroll__svg {
+        fill: getColors('white-color');
+      }
+    }
     @media screen and (min-width: 768px) {
       position: absolute;
       bottom: 39;
@@ -109,18 +119,10 @@
       justify-content: center;
       align-items: center;
       transition: background-color 0.7s ease;
-      &:hover,
-      &:focus {
-        background-color: getColors('orange-color');
-      }
     }
     &__svg {
       transition: fill 0.7s ease;
       fill: getColors('orange-color');
-      &:hover,
-      &:focus {
-        fill: getColors('white-color');
-      }
     }
   }
 }
