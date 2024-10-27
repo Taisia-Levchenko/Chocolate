@@ -16,7 +16,7 @@
             media="(max-width:767px)">
           <img src="./images/img/buy-now-img1.jpeg" alt="#" class="buy-list__img">
         </picture>
-        <p class="buy-list__text">100g</p>
+        <button class="buy-list__grams">100g</button>
       </li>
       <li class="buy-list__item">
 
@@ -25,7 +25,7 @@
         <source srcset="./images/img/buy-now-img2-phone.png 1x, ./images/img/buy-now-img2-phone@2x.png 2x"
           media="(max-width:767px)">
         <img src="./images/img/buy-now-img2.jpeg" alt="#" class="buy-list__img">
-        <p class="buy-list__text">200g</p>
+        <button class="buy-list__grams">200g</button>
       </li>
       <li class="buy-list__item">
         <picture>
@@ -36,7 +36,7 @@
             media="(max-width:767px)">
           <img src="./images/img/buy-now-img3.jpeg" alt="#" class="buy-list__img">
         </picture>
-        <p class="buy-list__text">300g</p>
+        <button class="buy-list__grams">300g</button>
       </li>
     </ul>
 
@@ -58,8 +58,10 @@
         <li class="buy-form-list__item buy-form-list__item--tel ">
           <h2 class="buy-form-list__name">Phone number </h2>
           <div class="phone-container">
-            <svg class="phone-container__svg"></svg>
-            <p class="phone-container__number"></p>
+            <svg class="phone-container__svg">
+              <use href="./images/icons/symboldefs.svg#ukraine"></use>
+            </svg>
+            <p class="phone-container__number">+380</p>
           </div>
 
           <input type="number" name="pnone-number" class="buy-form-list__input buy-form-list__input--tel"
@@ -70,18 +72,20 @@
           <h2 class="buy-form-list__name">Card number
           </h2>
           <div class="card-container">
-            <svg class="card-container__svg"></svg>
+            <svg class="card-container__svg">
+              <use href="./images/icons/symboldefs.svg#mastercard"></use>
+            </svg>
           </div>
           <input class="buy-form-list__input" type="text" placeholder="Enter card" name="user_card" required
             pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" title="xxxx-xxxx-xxxx-xxxx" />
+
+        </li>
+        <li class="buy-form-list__item">
+          <h2 class="buy-form-list__name">Comment </h2>
+          <textarea class="buy-form-list__textarea" name="user_message" rows="5" placeholder="Enter Text"></textarea>
+        </li>
+      </ul>
+      <button class="buy-now-form__btn" type="button" data-open-thanks>Submit</button>
+    </form>
   </div>
-  </li>
-  <li class="buy-form-list__item">
-    <h2 class="buy-form-list__name">Comment </h2>
-    <textarea class="buy-form-list__textarea" name="user_message" rows="5" placeholder="Enter Text"></textarea>
-  </li>
-  </ul>
-  <button class="buy-now-form__btn" type="button" data-open-thanks>Submit</button>
-  </form>
-</div>
 </div>
