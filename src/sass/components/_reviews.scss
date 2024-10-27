@@ -30,7 +30,7 @@
             }
             &__btn{
                 @include btn(getColors('background-color'), getColors('black-color'), 100px, 12px 28px);
-                @include text(18px, 600, none, none, $text-align:center);
+                @include text(14px, 600, 0.82, 0, $text-align:center);
                 border: 1px solid getColors('orange-color');
                 width: 165px;
                 height: 41px;
@@ -40,6 +40,7 @@
                     width: 222px;
                     height: 50px;
                     margin-top: 50px;
+                    @include text(18px, 600, 0.81, 0, $text-align:center);
                 }
             }
         }

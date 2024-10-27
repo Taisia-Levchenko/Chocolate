@@ -85,6 +85,7 @@ overflow: hidden;
     }
     @media (min-width: 1200px) {
        max-width: 430px; 
+       gap: 24px;
     }
     &__description{
         @include text(14px, 400, 1.29, -0.02em);
