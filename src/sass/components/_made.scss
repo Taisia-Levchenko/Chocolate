@@ -9,39 +9,28 @@
     }
 }
 .made .conntainer{
-    display: flex;
-    flex-direction: row;
+    @include flex(row);
     @media (min-width: 1200px) {
-        flex-direction: column;
-        justify-content: space-between;
+        @include flex(column, $justify:space-between);
     }
 }
 .made__title{
-    font-weight: 600;
-font-size: 20px;
-line-height: 1.20;
-letter-spacing: -0.03em;
+    @include text(20px, 600, 1.20, -0.03em, $text-align:center);
 text-transform: uppercase;
-text-align: center;
 margin: 0 0 32px;
 @media (min-width: 768px) {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
+    @include text(24, 600, 1.17,$text-align:center);
     margin: 0 0 50px;
 }
 &--orange{
-    color: orange;
+    color: getColors('orange-color');
 }
 }
 .made-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, $align:center, $justify:center);
     gap: 20px;
     @media (min-width: 1200px) {
-        flex-direction: row;
+        @include flex($wrap: row);
     }
 }
 .made-video-container{
@@ -61,11 +50,9 @@ overflow: hidden;
     height: 100%;
 }
 .made-article{
-     display: flex;
-     flex-direction: column;
-     background-color: #fff;
+    @include flex(column, $justify: space-between);
+     background-color: getColors('white-color');
      border-radius: 15px;
-     justify-content: space-between;
      padding: 20px 14px;
      @media (min-width: 768px) {
         padding: 32px 32px;
@@ -79,9 +66,7 @@ overflow: hidden;
      &__title{
         max-width: 307px;
         text-align: start;
-        font-weight: 600;
-    font-size: 18px;
-    line-height: 1.33;
+        @include text(18px, 600, 1.33);
     margin-bottom: 20px;
     @media (min-width: 768px) {
         max-width: 350px;
@@ -102,10 +87,7 @@ overflow: hidden;
        max-width: 430px; 
     }
     &__description{
-        font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
+        @include text(14px, 400, 1.29, -0.02em);
     @media (min-width: 1200px) {
         max-width: 409px;
     }

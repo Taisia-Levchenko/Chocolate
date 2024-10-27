@@ -14,38 +14,39 @@
             @media (min-width: 1200px) {
                 padding: 128px 0;
             }
+            &__title{
+                @include text(20px, 600, 1.20, -0.03em, center);
+            text-transform: uppercase;
+            color: getColors('orange-color');
+            margin-bottom: 32px;
+                @media (min-width: 768px) {
+                    font-size: 24px;
+                    line-height: 1.17;
+                    margin-bottom:50px;
+                }
+                &--isloved{
+                    color: black;
+                }
+            }
+            &__btn{
+                @include btn(getColors('background-color'), getColors('black-color'), 100px, 12px 28px);
+                @include text(18px, 600, none, none, $text-align:center);
+                border: 1px solid getColors('orange-color');
+                width: 165px;
+                height: 41px;
+                margin-top: 32px;
+                @media (min-width: 768px) {
+                    padding: 14px 40px;
+                    width: 222px;
+                    height: 50px;
+                    margin-top: 50px;
+                }
+            }
         }
-    .reviews__title__chocolate{
-        font-weight: 600;
-    font-size: 20px;
-    line-height: 1.20;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: orange;
-    margin-bottom: 32px;
-        @media (min-width: 768px) {
-            font-size: 24px;
-            line-height: 1.17;
-            margin-bottom:50px;
-        }
-        &--isloved{
-            color: black;
-        }
-    }
-
     .reviews-list{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        gap: 28px;
-        &__thumb{
-            border: 1px solid rgba(17, 17, 17, 0.1);
-            border-radius: 15px;
+        &__item{
             width: 335px;
-        height: 200px;
-        position: relative;
-        z-index: 1;
+            height: 242px;
             @media (min-width: 768px) {
                 width: 344px;
             }
@@ -53,12 +54,34 @@
                 width: 360px;
             }
         }
+        &__thumb{
+            @include btn(none, none, 15px, 56px 18px 42px);
+            border: 1px solid rgba(17, 17, 17, 0.1);
+            max-height: 200px;
+        position: relative;
+        margin-top: 40px;
+            @media (min-width: 768px) {
+                padding: 56px 16px 42px;
+            }
+            @media (min-width: 1200px) {
+                padding: 56px 24px 42px;
+            }
+        }
+        &__image{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
         &__title{
+            @include text(18px, 600, 1.33, none, $text-align:center);
             font-weight: 600;
         font-size: 18px;
         line-height: 1.33;
         text-align: center;
-        margin: 56px 0 24px;
+        margin-bottom: 24px;
         }
         &__text{
             font-weight: 400;
@@ -67,40 +90,5 @@
         letter-spacing: -0.02em;
         text-align: center;
         color: rgba(17, 17, 17, 0.7);
-        padding: 18px 42px;
-        @media (min-width: 768px) {
-            padding-left: 16px;
-            padding-right: 16px;
-        }
-        @media (min-width: 1200px) {
-            padding-left: 24px;
-            padding-right: 24px;
-        }
-        }
-        &__image{
-            margin: 0 auto;
-            width: 80px;
-            height: 80px;
-            position: absolute;
-            z-index: 2;
-            top: -50px;
-            right: 150px;
-        }
-    }
-
-
-
-    .reviews__btn{
-        border: 1px solid orange;
-        border-radius: 100px;
-        padding: 12px 28px;
-        width: 165px;
-        height: 41px;
-        margin-top: 32px;
-        @media (min-width: 768px) {
-            padding: 14px 40px;
-            width: 222px;
-            height: 50px;
-            margin-top: 50px;
         }
     }
