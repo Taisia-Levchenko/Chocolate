@@ -1,0 +1,140 @@
+.backdrop-review {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.449);
+    z-index: 10;
+}
+.reviews-modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    padding: 32px 24px;
+    width: 311px;
+    max-height: 90vh;
+    border-radius: 15px;
+    background-color: getColors('white-color');
+    overflow: scroll;
+    @media (min-width: 768px) {
+        padding: 40px;
+        width: 517px;
+    }
+    &__close-btn{
+        @include flex($align: center, $justify: center);
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 14px;
+        right: 14px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        @media (min-width: 768px) {
+            width: 28px;
+            height: 28px;
+            top: 24px;
+            right: 24px;
+            
+        }
+        &:hover, &:focus{
+            outline: none;
+        }
+    }
+    &__close-svg{
+        width: 12px;
+        height: 12px;
+        fill: getColors('black-color');
+        @media (min-width: 768px) {
+            width: 14px;
+            height: 14px;
+        }
+        .reviews-modal__close-btn:hover &, .reviews-modal__close-btn:focus &{
+            fill: getColors('orange-color');
+        }
+    }
+    &__title{
+        @include text(20px, 600, 1.2, -0.03em);
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    color: getColors('black-color');
+    @media (min-width: 768px) {
+        font-size: 24px;
+    line-height: 1.17;
+    max-width: 298px;
+    margin-bottom: 40px;
+    }
+    &--orange{
+        color: getColors('orange-color');
+    }
+    }
+    &__submit-btn{
+        padding: 12px 28px;
+        @include text(14px, 600, 1.22, 0, center);
+        color: getColors('white-color');
+        background-color: getColors('orange-color');
+        margin-top: 18px;
+        border-radius: 100px;
+        @media (min-width: 768px) {
+            padding: 14px 40px;
+        }
+        &:hover, &:focus{
+            background-color: getColors('background-button');
+            color: getColors('orange-color');
+            outline: none;
+        }
+    }
+}
+
+
+
+.reviews-modal-list{
+    @include flex(column, nowrap, stretch, center);
+    gap: 14px;
+    @media (min-width: 768px) {
+        gap: 19px;
+    }
+    &__item{
+        position: relative;
+    }
+    &__input, &__textarea{
+        width: 100%;
+        padding: 14px 18px;
+        border-radius: 8px;
+        border: 1px solid #1111110d;
+        @include text(13px, 400, 1.21, -0.02em);
+        @media (min-width: 768px) {
+            font-size: 18px;
+            line-height: 1.22;
+            padding: 22px 24px;
+            border-radius: 13px;
+        }
+        &::placeholder{
+            color: getColors('placeholder-color');
+        }
+        &--tel{
+            padding-left: 108px;
+            @media (min-width: 768px) {
+                padding-left: 177px;
+            }
+        }
+    }
+    &__textarea{
+        resize: none;
+        height: 91px;
+        @media (min-width: 768px) {
+            height: 137px;
+        }
+    }
+}
+.phone-container--reviews{
+    top: 14px;
+    left: 14px;
+    @media (min-width:768px) {
+        top: 21px;
+        left: 24px;
+    }
+}
