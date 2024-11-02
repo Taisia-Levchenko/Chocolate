@@ -1,0 +1,102 @@
+.backdrop-feedback {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    background-color: rgba(0, 0, 0, 0.449);
+}
+
+.modal-feedback {
+    position: relative;
+    width: 311px;
+    padding: 84px 24px 178px 58px;
+    top: 50%;
+    left: 50%;
+    background-color: getColors('orange-color');
+    z-index: 13;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    overflow: hidden;
+    background-image: url("../images/img/chocobarm.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url("../images/img/chocobarm@2x.png");
+    }
+
+    @media (min-width: 768px) {
+        width: 516px;
+        padding: 163px 49px 163px 170px;
+        background-image: url("../images/img/chocobartd.png");
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("../images/img/chocobartd@2x.png");
+        }
+
+    }
+
+    &__btn-close {
+        position: absolute;
+        @include flex($align: center, $justify: center);
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        top: 14px;
+        right: 14px;
+        background-color: getColors('background-color');
+        border: none;
+
+        @media (min-width: 768px) {
+            width: 40px;
+            height: 40px;
+            top: 24px;
+            right: 24px;
+        }
+    }
+
+    &__svg-close {
+        width: 10px;
+        height: 10px;
+        fill: getColors('orange-color');
+
+        @media (min-width: 768px) {
+            height: 14px;
+            width: 14px;
+        }
+    }
+
+    &__title {
+        @include text(20px, 600, 1.20, -0.02em);
+        text-transform: uppercase;
+        color: getColors('white-color');
+        margin-bottom: 8px;
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+            line-height: 1.17;
+        }
+    }
+
+    &__text {
+        @include text(14px, 400, 1.14, -0.02em);
+        color: getColors('white-color');
+        max-width: 167px;
+
+        @media (min-width: 768px) {
+            @include text(18px, 400, 1.33, -0.02em);
+            max-width: 300px;
+        }
+    }
+}
