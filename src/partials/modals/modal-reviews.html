@@ -1,0 +1,32 @@
+<div class="backdrop-review">
+    <form class="reviews-modal">
+        <button class="reviews-modal__close-btn" data-close-review>
+            <svg class="reviews-modal__close-svg">
+                <use href="./images/icons/symboldefs.svg#close"></use>
+            </svg>
+        </button>
+        <h2 class="reviews-modal__title">leave a review 
+            about <span class="reviews-modal__title reviews-modal__title--orange">our chocolate</span></h2>
+        <ul class="reviews-modal-list">
+            <li class="reviews-modal-list__item">
+                <input class="reviews-modal-list__input" type="text" placeholder="Name">
+            </li>
+            <li class="reviews-modal-list__item">
+                <input class="reviews-modal-list__input" type="email" placeholder="Enter your email">
+            </li>
+            <li class="reviews-modal-list__item reviews-modal-list__item--tel">
+                <div class="phone-container phone-container--reviews">
+                    <svg class="phone-container__svg">
+                        <use href="./images/icons/symboldefs.svg#ukraine"></use>
+                    </svg>
+                    <p class="phone-container__number">+380</p>
+                </div>
+                <input class="reviews-modal-list__input reviews-modal-list__input--tel" type="tel" placeholder="Phone number">
+            </li>
+            <li class="reviews-modal-list__item">
+                <textarea class="reviews-modal-list__textarea" name="comment" id="text" cols="30" rows="10" placeholder="Enter text"></textarea>
+            </li>
+        </ul>
+        <button type="button" class="reviews-modal__submit-btn" data-open-feedback>Send</button>
+    </form>
+</div>
