@@ -35,12 +35,20 @@
                 width: 165px;
                 height: 41px;
                 margin-top: 32px;
+                transition-property:  color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
                 @media (min-width: 768px) {
                     padding: 14px 40px;
                     width: 222px;
                     height: 50px;
                     margin-top: 50px;
                     @include text(18px, 600, 0.81, 0, $text-align:center);
+                }
+                &:hover, &:focus{
+                    background-color: getColors('orange-color');
+                    color: getColors('white-color');
+                    outline: none;
                 }
             }
         }
